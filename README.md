@@ -10,14 +10,6 @@ The **Aptos NFT Marketplace** is designed to allow users to create and display t
 - **Minimalistic Contract**: A simple, compact contract that focuses on core functionalities like creating and viewing NFT collections.
 - **Decentralized & Trustless**: Operates in a decentralized manner, where users control their own assets without relying on centralized entities.
 
-## Future Scope
-- **Secondary Market**: Enable buying, selling, and trading NFTs on the marketplace.
-- **Advanced Metadata**: Support for more complex metadata, including images, animations, and more.
-- **Auctions & Bidding**: Integration of auction functionality, allowing creators to set auctions for their NFTs.
-- **Royalties for Creators**: Implement royalty mechanisms to ensure creators earn a percentage of every resale.
-- **Interoperability**: Support for cross-chain NFT transfers, allowing collections from other blockchains to be represented and traded on the Aptos platform.
-- **User Profiles**: Advanced profile creation, showing a user's NFT portfolio, transaction history, and other relevant details.
-
 ## Smart Contract Information
 
 ### Main Functions
@@ -75,59 +67,17 @@ module NftMarketplace::Marketplace {
      - `collection`: The NFT collection to display.
    - **Returns**: A tuple containing the collection name, description, URI, and the number of NFTs in the collection.
 
-## How to Use
+## Deployment
+**Contract Address**: https://explorer.aptoslabs.com/txn/0x611d28506409cd98d2c97f895301d835d0b08e1141dee449379f4e91e4ca704b?network=testnet
+**Transaction ID**: 0x5404eaac2e557ffa7c1c73872818f1fa0c1fccdf1b8999c880f8257762b2d9fc
 
-### Prerequisites
-- Set up the Aptos CLI and have an Aptos account.
-- Ensure your development environment has the Move compiler and Aptos Framework installed.
+## Future Scope
+- **Secondary Market**: Enable buying, selling, and trading NFTs on the marketplace.
+- **Advanced Metadata**: Support for more complex metadata, including images, animations, and more.
+- **Auctions & Bidding**: Integration of auction functionality, allowing creators to set auctions for their NFTs.
+- **Royalties for Creators**: Implement royalty mechanisms to ensure creators earn a percentage of every resale.
+- **Interoperability**: Support for cross-chain NFT transfers, allowing collections from other blockchains to be represented and traded on the Aptos platform.
+- **User Profiles**: Advanced profile creation, showing a user's NFT portfolio, transaction history, and other relevant details.
 
-### Steps
-1. Clone the repository and navigate to the project directory.
-2. Compile the contract using:
-   ```bash
-   aptos move compile
-   ```
-3. Deploy the contract to your Aptos account:
-   ```bash
-   aptos move publish --profile <your-profile>
-   ```
-4. Use the provided functions to create and view NFT collections:
-   - Create a collection:
-     ```bash
-     aptos move run --function-id NftMarketplace::Marketplace::create_collection --args <owner-address> <collection-name> <description> <uri>
-     ```
-   - Show collection information:
-     ```bash
-     aptos move run --function-id NftMarketplace::Marketplace::show_collection --args <collection-id>
-     ```
-
-## Move.toml
-Here is the `Move.toml` configuration file for building and managing the project:
-
-```toml
-[package]
-name = "NftMarketplace"
-version = "0.0.1"
-license = "MIT"
-authors = ["your_name"]
-description = "A simple NFT marketplace to create and show NFT collections."
-
-[dependencies]
-AptosFramework = { local = "../aptos-core/aptos-move/framework/aptos-framework" }
-
-[build]
-output_dir = "build"
-
-[addresses]
-NftMarketplace = "_"
-
-[dev-addresses]
-default = "0xA550C18"
-
-[layout]
-modules = ["sources"]
-```
-
-## Conclusion
-The **Aptos NFT Marketplace** aims to simplify the creation and display of NFT collections on the blockchain, with future features planned to expand its functionality. The current contract provides a basic foundation for NFT operations, and the roadmap envisions exciting possibilities for growth in decentralized NFT trading and management.
+![image](https://github.com/user-attachments/assets/8e3c4f44-a6d3-48fe-8fd9-6cb83fa16adf)
 
