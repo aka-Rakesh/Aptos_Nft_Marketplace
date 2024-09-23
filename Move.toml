@@ -1,1 +1,27 @@
+[package]
+name = "NftMarketplace"
+version = "0.0.1"
+license = "MIT"
+authors = ["Rakesh Sharma akarakesh1.0@gmail.com"]
+description = "A simple NFT marketplace to create and show NFT collections."
 
+[dependencies]
+AptosFramework = { local = "../aptos-core/aptos-move/framework/aptos-framework" }
+
+[build]
+# Directory where the compiled bytecode will be stored
+output_dir = "build"
+
+[addresses]
+# Define the named address used in the contract. Replace this with your actual address when deploying.
+NftMarketplace = "_"
+
+[dev-addresses]
+# Developer address used for testing.
+default = "0xA550C18"
+
+[dev-dependencies]
+# Any extra dependencies you need during development.
+
+[layout]
+modules = ["sources"]
