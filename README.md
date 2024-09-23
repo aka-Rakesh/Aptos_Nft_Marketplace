@@ -69,7 +69,7 @@ module NftMarketplace::Marketplace {
 
 ## Deployment
 **Contract Address**: https://explorer.aptoslabs.com/txn/0x611d28506409cd98d2c97f895301d835d0b08e1141dee449379f4e91e4ca704b?network=testnet
-**Transaction ID**: 0x5404eaac2e557ffa7c1c73872818f1fa0c1fccdf1b8999c880f8257762b2d9fc
+**Transaction ID**: 0x611d28506409cd98d2c97f895301d835d0b08e1141dee449379f4e91e4ca704b
 
 ## Future Scope
 - **Secondary Market**: Enable buying, selling, and trading NFTs on the marketplace.
